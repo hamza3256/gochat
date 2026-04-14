@@ -1,0 +1,28 @@
+server:
+  listen_addr: ":8080"
+  internal_addr: ":6060"
+  max_connections: 1048576
+  num_reactors: 0  # 0 = runtime.NumCPU()
+
+engine:
+  ring_buffer_size: 1048576  # must be power of 2
+  dispatcher_workers: 256
+  read_buffer_size: 4096
+  write_buffer_size: 4096
+
+redis:
+  addr: "localhost:6379"
+  password: ""
+  db: 0
+  presence_ttl_seconds: 60
+  heartbeat_interval_seconds: 30
+
+wal:
+  dir: "./data/wal"
+  segment_max_bytes: 67108864  # 64 MB
+  sync_interval_ms: 10
+  sync_batch_size: 256
+
+logging:
+  level: "info"
+  encoding: "json"
