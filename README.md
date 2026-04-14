@@ -1,7 +1,7 @@
 # GoChat
 
 A distributed messaging engine designed to sustain 1 million concurrent
-WebSocket connections with p99 end-to-end latency below 50 ms.
+WebSocket connections with p99 end-to-end latency <50 ms.
 
 ## Architecture
 
