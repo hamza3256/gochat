@@ -1,0 +1,6 @@
+/bin/
+/data/
+*.test
+*.out
+.DS_Store
+.plans/
